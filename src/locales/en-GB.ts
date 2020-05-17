@@ -26,6 +26,21 @@ export default {
     CANCEL: "Cancel",
   },
 
+  DEPLOY_CONTRACT_FORM:{
+    TITLE:"Step 1: Deploy Contract",
+    SENDER_ADDRESS:"Sender Address",
+    CARRY_FEE:"Carry Fee",
+    CONTRACT_AFID:"Contract Afid",
+    VAR_AFID:"Var Afid",
+  },
+
+  APPLY_CONTRACT_FORM:{
+    TITLE:"Step 2: Apply Contract",
+    CONTRACT_ADDRESS:"Contract Address",
+    FUNCTION_NAME:"Function Name",
+    INPUT_DATA_AFTD:"Input Data Afid",
+  },
+
   DISCLAIMER: {
     TITLE: "Disclaimer",
     TEXT1:

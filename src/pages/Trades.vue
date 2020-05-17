@@ -52,6 +52,7 @@
 </template>
 
 <script lang="ts">
+
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { MonitorHeader, ForgingStats } from "@/components/monitor";
 import { mapGetters } from "vuex";
