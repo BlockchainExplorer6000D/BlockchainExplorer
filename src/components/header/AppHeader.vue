@@ -56,11 +56,8 @@ import {
     ...mapGetters("network", ["hasMagistrateEnabled"]),
 
     menuEntries() {
-      const entries = [{ name: "home" }, { name: "top-wallets", params: { page: 1 } }, { name: "delegate-monitor" }];
-
-      if (this.hasMagistrateEnabled) {
-        entries.push({ name: "businesses", params: { page: 1 } }, { name: "bridgechains", params: { page: 1 } });
-      }
+      const entries = [{ name: "home" }, { name: "top-wallets", params: { page: 1 } }, 
+                       { name: "trades" }, { name: "contracts" }, { name: "files" }];
 
       entries.push({ name: "advanced-search", params: { page: 1 } });
 

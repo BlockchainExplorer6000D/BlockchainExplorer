@@ -77,12 +77,7 @@
           <div class="mr-4">{{ $t("COMMON.TIMESTAMP") }}</div>
           <div v-if="transaction.timestamp">{{ readableTimestamp(transaction.timestamp.unix) }}</div>
         </div>
-
-        <div v-if="transaction.vendorField" class="list-row-border-b-no-wrap">
-          <div class="mr-4">{{ $t("TRANSACTION.SMARTBRIDGE") }}</div>
-          <div class="overflow-hidden break-words">{{ transaction.vendorField }}</div>
-        </div>
-
+        
         <div v-if="transaction.nonce" class="list-row-border-b-no-wrap">
           <div class="mr-4">{{ $t("TRANSACTION.NONCE") }}</div>
           <div>{{ transaction.nonce }}</div>

@@ -5,8 +5,8 @@ export const I18N = {
 
 export const brand = {
   footer: {
-    url: "https://ark.io",
-    text: "ARK.io",
+    url: "http://www.ust.hk/",
+    text: "ust.hk",
   },
 };
 

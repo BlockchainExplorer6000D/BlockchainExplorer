@@ -35,15 +35,6 @@
           />
         </div>
 
-        <div v-if="transaction.vendorField" class="list-row-border-b-no-wrap">
-          <div class="mr-4">
-            {{ $t("TRANSACTION.SMARTBRIDGE") }}
-          </div>
-          <div class="text-right truncate">
-            {{ transaction.vendorField }}
-          </div>
-        </div>
-
         <div class="list-row-border-b">
           <div class="mr-4">
             {{ $t("TRANSACTION.AMOUNT") }}

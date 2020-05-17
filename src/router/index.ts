@@ -8,6 +8,8 @@ import NProgress from "nprogress";
 // route level code-splitting
 // this generates a separate chunk (about.[hash].js) for this route
 // which is lazy-loaded when the route is visited.
+const TradesComponent = () => import(/* webpackChunkName: "home" */ "@/pages/Trades.vue");
+
 const HomeComponent = () => import(/* webpackChunkName: "home" */ "@/pages/Home.vue");
 const BlockComponent = () => import(/* webpackChunkName: "block" */ "@/pages/Block.vue");
 const BlockTransactionsComponent = () =>
@@ -37,6 +39,24 @@ function getTitle(title: string): string {
 const router = new Router({
   mode: process.env.VUE_APP_ROUTER_MODE as RouterMode,
   routes: [
+    {
+      path: "/trades", 
+      name: "trades", 
+      component: TradesComponent,
+      meta: { title: (route: Route) => getTitle("Trades") },
+    }, 
+    {
+      path: "/", 
+      name: "contracts", 
+      component: HomeComponent,
+      meta: { title: (route: Route) => getTitle("Contracts") },
+    },     {
+      path: "/", 
+      name: "files", 
+      component: HomeComponent,
+      meta: { title: (route: Route) => getTitle("Files") },
+    }, 
+
     {
       path: "/",
       name: "home",

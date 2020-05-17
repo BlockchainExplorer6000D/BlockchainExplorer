@@ -75,14 +75,6 @@
         </div>
       </div>
     </div>
-
-    <InputText
-      :label="$t('TRANSACTION.SMARTBRIDGE')"
-      name="vendorField"
-      class="pt-0"
-      @input="onInputChange"
-      @keyup.enter.native="onEnterKey"
-    />
   </div>
 </template>
 

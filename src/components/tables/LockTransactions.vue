@@ -11,8 +11,6 @@
         <div v-if="data.column.field === 'lockId'">
           <LinkTransaction
             :id="data.row.lockId"
-            :smart-bridge="data.row.vendorField"
-            :show-smart-bridge-icon="showSmartBridgeIcon"
           />
         </div>
 
@@ -40,12 +38,6 @@
             :asset="data.row.asset"
             :type-group="data.row.typeGroup"
           />
-        </div>
-
-        <div v-else-if="data.column.field === 'vendorField'">
-          <div class="cell-smartbridge-truncate">
-            {{ data.row.vendorField }}
-          </div>
         </div>
 
         <div v-else-if="data.column.field === 'amount'">
@@ -102,12 +94,6 @@ export default class LockTransactionsDesktop extends Vue {
         tdClass: "break-all",
       },
       {
-        label: this.$t("TRANSACTION.SMARTBRIDGE"),
-        field: "vendorField",
-        thClass: "text-right cell-smartbridge",
-        tdClass: "text-right cell-smartbridge",
-      },
-      {
         label: this.$t("TRANSACTION.AMOUNT"),
         field: "amount",
         type: "number",
@@ -117,12 +103,6 @@ export default class LockTransactionsDesktop extends Vue {
     ];
 
     return columns;
-  }
-
-  get showSmartBridgeIcon() {
-    return this.transactions!.some((transaction) => {
-      return !!transaction.vendorField;
-    });
   }
 
   @Watch("transactions")

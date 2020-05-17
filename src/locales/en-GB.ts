@@ -171,7 +171,7 @@ export default {
   SEARCH: {
     PLACEHOLDER: {
       SHORT: "Search",
-      LONG: "Find a block, transaction, address or delegate",
+      LONG: "Find a block, transaction, address",
     },
     NO_RESULTS: "Nothing matched your search",
   },
@@ -183,6 +183,16 @@ export default {
   },
 
   PAGES: {
+    TRADES: {
+      TITLE: "Trades", 
+    }, 
+    CONTRACTS: {
+      TITLE: "Contracts", 
+    }, 
+    FILES: {
+      TITLE: "Files", 
+    }, 
+
     HOME: {
       TITLE: "Home",
       HEADER: "Latest transactions and blocks",
