@@ -185,6 +185,13 @@ export default {
   PAGES: {
     TRADES: {
       TITLE: "Trades", 
+      FIELDS: {
+        AMOUNT: "Amount", 
+        SENDER: "Sender address", 
+        RECIPIENT: "Recipient address", 
+        PUBLIC_KEY: "Public key", 
+        PRIVATE_KEY: "Private key", 
+      }, 
     }, 
     CONTRACTS: {
       TITLE: "Contracts", 
